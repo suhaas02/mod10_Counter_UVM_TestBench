@@ -1,0 +1,812 @@
+Command: vcs -l vcs.log -timescale=1ns/1ps -sverilog -ntb_opts uvm -debug_access+all \
+-full64 -kdb -lca -P /home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/novas.tab \
+/home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+../rtl/counter_if.sv ../rtl/mod10_counter.v +incdir+../tb +incdir+../test +incdir+../agent \
+../tb/counter_test_pkg.sv ../tb/top.sv
+                         Chronologic VCS (TM)
+       Version T-2022.06-SP1_Full64 -- Thu Aug 22 14:43:39 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+
+Warning-[LCA_FEATURES_ENABLED] Usage warning
+  LCA features enabled by '-lca' argument on the command line.  For more 
+  information regarding list of LCA features please refer to Chapter "LCA 
+  features" in the VCS Release Notes
+
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_version_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/snps_macros.svp'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_message_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_phase_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_object_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_printer_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_tlm_defines.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_tlm_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_sequence_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_callback_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_reg_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/macros/uvm_deprecated_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/directc/uvm_directc.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/directc/uvm_seed.vh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/directc/uvm_directc.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_hdl.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_svcmd_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_regex.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_version.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_object_globals.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_misc.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_object.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_pool.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_queue.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_factory.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_registry.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_spell_chkr.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_resource.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/deprecated/uvm_resource_converter.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_resource_specializations.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_resource_db.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_config_db.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_printer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_comparer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_packer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_recorder.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_event_callback.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_event.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_barrier.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_callback.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_callback.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_catcher.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_server.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_handler.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_report_object.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_transaction.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_domain.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_bottomup_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_topdown_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_task_phase.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_common_phases.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_runtime_phases.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_component.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_root.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_component.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_objection.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_heartbeat.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_globals.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_cmdline_processor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_ifs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_sqr_ifs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_port_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_ports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_exports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_analysis_port.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_fifo_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_fifos.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm_req_rsp.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_sqr_connections.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm1/uvm_tlm.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_pair.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_policies.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_in_order_comparator.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_algorithmic_comparator.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_random_stimulus.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_subscriber.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_monitor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_driver.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_push_driver.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_scoreboard.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_agent.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_env.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_test.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/comps/uvm_comps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_item.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer_analysis_fifo.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer_param_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequencer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_push_sequencer.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_library.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_sequence_builtin.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/seq/uvm_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_defines.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_time.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_generic_payload.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_ifs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_imps.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_ports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_exports.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_sockets_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2_sockets.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/tlm2/uvm_tlm2.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_item.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_adapter.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_predictor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_sequence.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_cbs.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_backdoor.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_field.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_vreg_field.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_indirect.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_fifo.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_file.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_mem_mam.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_vreg.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_mem.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_map.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_block.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_hw_reset_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_bit_bash_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_mem_walk_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_mem_access_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_access_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_mem_shared_access_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_mem_built_in_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/sequences/uvm_reg_mem_hdl_paths_seq.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/snps_uvm_reg_bank.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/reg/uvm_reg_model.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/vcs_uvm_alt.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_pkg.sv'.
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/msglog.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_msglog_report_server.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_vcs_recorder.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_vcs_record_interface.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/vcs/uvm_custom_install_vcs_recorder.sv'.
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_recorder.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_recorder.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_reg_map_recording.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_message_catcher.svh'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_pli_base.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_message_catcher.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/./dpi/uvm_verdi_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_reg_recording.sv'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/include/verdi_trans_recorder_dpi.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_verdi_pli.svh'.
+Back to file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'.
+Parsing design file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/uvm_custom_install_verdi_recorder.sv'
+Parsing design file '../rtl/counter_if.sv'
+Parsing design file '../rtl/mod10_counter.v'
+Parsing design file '../tb/counter_test_pkg.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '../tb/counter_test_pkg.sv'.
+Parsing included file '../agent/transaction.sv'.
+Back to file '../tb/counter_test_pkg.sv'.
+Parsing included file '../tb/count_config.sv'.
+Back to file '../tb/counter_test_pkg.sv'.
+Parsing included file '../agent/driver.sv'.
+Back to file '../tb/counter_test_pkg.sv'.
+Parsing included file '../agent/monitor.sv'.
+Back to file '../tb/counter_test_pkg.sv'.
+Parsing included file '../agent/sequencer.sv'.
+Back to file '../tb/counter_test_pkg.sv'.
+Parsing included file '../agent/agent.sv'.
+Back to file '../tb/counter_test_pkg.sv'.
+Parsing included file '../tb/scoreboard.sv'.
+Back to file '../tb/counter_test_pkg.sv'.
+Parsing included file '../tb/environment.sv'.
+Back to file '../tb/counter_test_pkg.sv'.
+Parsing included file '../agent/sequence.sv'.
+Back to file '../tb/counter_test_pkg.sv'.
+Parsing included file '../test/test.sv'.
+Back to file '../tb/counter_test_pkg.sv'.
+Parsing design file '../tb/top.sv'
+Parsing included file '/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/uvm_macros.svh'.
+Back to file '../tb/top.sv'.
+Top Level Modules:
+       uvm_custom_install_recording
+       uvm_custom_install_verdi_recording
+       top
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+
+10 modules and 0 UDP read.
+recompiling package vcs_paramclassrepository
+recompiling package _vcs_DPI_package
+recompiling package uvm_pkg
+recompiling package _vcs_msglog
+recompiling module uvm_custom_install_recording
+recompiling module uvm_custom_install_verdi_recording
+recompiling module counter_if
+recompiling module mod10_counter
+recompiling package counter_test_pkg
+recompiling module top
+All of 10 modules done
+make[1]: Entering directory '/home1/BPRN08/VegiJ/VLSI_RN/UVM_LABS/UVM_Verification_Projects/counter_verification_uvm/sim/csrc' \
+
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+g++ -w  -pipe -DVCS -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/include \
+-c /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/dpi/uvm_dpi.cc
+g++ -w  -pipe -DVCS -DUVM_DPI_DO_TYPE_CHECK -fPIC -O -I/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/include \
+-c /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/verdi/dpi/uvm_verdi_dpi.cpp \
+
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib -L/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib \
+-Wl,-rpath-link=./  /usr/lib64/libnuma.so.1 uvm_dpi.o uvm_verdi_dpi.o   objs/amcQw_d.o \
+_3914851_archive_1.so  SIM_l.o      rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o \
+rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs /home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+-lvcsnew -lsimprofile -luclinative /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive       ./../simv.daidir/vc_hdrs.o \
+_vcs_pli_stub_.o   /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/linux64/lib/vcs_save_restore_new.o \
+/home/cad/eda/SYNOPSYS/VERDI_2022/verdi/T-2022.06-SP1/share/PLI/VCS/LINUX64/pli.a \
+-ldl -lm  -lc -lpthread -ldl 
+../simv up to date
+make[1]: Leaving directory '/home1/BPRN08/VegiJ/VLSI_RN/UVM_LABS/UVM_Verification_Projects/counter_verification_uvm/sim/csrc' \
+
+CPU time: 13.398 seconds to compile + .333 seconds to elab + .927 seconds to link
+Verdi KDB elaboration done and the database successfully generated: 0 error(s), 0 warning(s)
+Command: /home1/BPRN08/VegiJ/VLSI_RN/UVM_LABS/UVM_Verification_Projects/counter_verification_uvm/sim/./simv -a vcs.log +fsdbfile+wave.fsdb +ntb_random_seed_automatic
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06-SP1_Full64; Runtime version T-2022.06-SP1_Full64;  Aug 22 14:43 2024
+NOTE: automatic random seed used: 1952196673
+----------------------------------------------------------------
+UVM-1.1d.Synopsys
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+*Verdi* Loading libsscore_vcs202206.so
+FSDB Dumper for VCS, Release Verdi_T-2022.06-SP1, Linux x86_64/64bit, 08/28/2022
+(C) 1996 - 2022 by Synopsys, Inc.
+*Verdi* : Create FSDB file 'wave.fsdb'
+*Verdi* : Begin traversing the scope (top), layer (0).
+*Verdi* : End of traversing.
+UVM_INFO @ 0: reporter [RNTST] Running test test...
+UVM_INFO ../tb/scoreboard.sv(15) @ 0: uvm_test_top.env_h.sb [scoreboard] I am in build phase
+UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+------------------------------------------------------------------
+Name                       Type                        Size  Value
+------------------------------------------------------------------
+uvm_test_top               test                        -     @462 
+  env_h                    environment                 -     @476 
+    agnth                  agent                       -     @484 
+      drv_h                driver                      -     @522 
+        rsp_port           uvm_analysis_port           -     @539 
+        seq_item_port      uvm_seq_item_pull_port      -     @530 
+      mon_h                monitor                     -     @505 
+        monitor_port       uvm_analysis_port           -     @513 
+      seqr_h               sequencer                   -     @548 
+        rsp_export         uvm_analysis_export         -     @556 
+        seq_item_export    uvm_seq_item_pull_imp       -     @662 
+        arbitration_queue  array                       0     -    
+        lock_queue         array                       0     -    
+        num_last_reqs      integral                    32    'd1  
+        num_last_rsps      integral                    32    'd1  
+    sb                     scoreboard                  -     @492 
+      fifo_h               uvm_tlm_analysis_fifo #(T)  -     @678 
+        analysis_export    uvm_analysis_imp            -     @722 
+        get_ap             uvm_analysis_port           -     @713 
+        get_peek_export    uvm_get_peek_imp            -     @695 
+        put_ap             uvm_analysis_port           -     @704 
+        put_export         uvm_put_imp                 -     @686 
+------------------------------------------------------------------
+
+I am in run_phase
+UVM_INFO ../agent/monitor.sv(37) @ 10000: uvm_test_top.env_h.agnth.mon_h [monitor] Printing from monitor
+------------------------------------
+Name        Type         Size  Value
+------------------------------------
+data_rcvd   transaction  -     @731 
+  rst       integral     1     'd0  
+  load      integral     1     'd0  
+  mode      integral     1     'h0  
+  data_in   integral     4     'd0  
+  data_out  integral     4     'd0  
+------------------------------------
+UVM_INFO ../agent/driver.sv(36) @ 10000: uvm_test_top.env_h.agnth.drv_h [driver] Printing from driver -------------------------------------------------------------------------------------
+Name                           Type         Size  Value                              
+-------------------------------------------------------------------------------------
+req                            transaction  -     @742                               
+  rst                          integral     1     'd0                                
+  load                         integral     1     'd0                                
+  mode                         integral     1     'h1                                
+  data_in                      integral     4     'd0                                
+  data_out                     integral     4     'd0                                
+  begin_time                   time         64    0                                  
+  depth                        int          32    'd2                                
+  parent sequence (name)       string       3     seq                                
+  parent sequence (full name)  string       35    uvm_test_top.env_h.agnth.seqr_h.seq
+  sequencer                    string       31    uvm_test_top.env_h.agnth.seqr_h    
+-------------------------------------------------------------------------------------
+
+I am in ref model
+I am here in check data
+UVM_INFO @ 10000: reporter [MISCMP] Miscompare for data_rcvd.data_out: lhs = 'h0 : rhs = 'h9
+UVM_INFO @ 10000: reporter [MISCMP] 1 Miscompare(s) for object data_rcvd@774 vs. data_rcvd@731
+I am in run_phase
+UVM_INFO ../agent/monitor.sv(37) @ 30000: uvm_test_top.env_h.agnth.mon_h [monitor] Printing from monitor
+------------------------------------
+Name        Type         Size  Value
+------------------------------------
+data_rcvd   transaction  -     @770 
+  rst       integral     1     'd0  
+  load      integral     1     'd0  
+  mode      integral     1     'h1  
+  data_in   integral     4     'd0  
+  data_out  integral     4     'd0  
+------------------------------------
+UVM_INFO ../agent/driver.sv(36) @ 30000: uvm_test_top.env_h.agnth.drv_h [driver] Printing from driver -------------------------------------------------------------------------------------
+Name                           Type         Size  Value                              
+-------------------------------------------------------------------------------------
+req                            transaction  -     @779                               
+  rst                          integral     1     'd0                                
+  load                         integral     1     1                                  
+  mode                         integral     1     'h0                                
+  data_in                      integral     4     'd0                                
+  data_out                     integral     4     'd0                                
+  begin_time                   time         64    10000                              
+  depth                        int          32    'd2                                
+  parent sequence (name)       string       3     seq                                
+  parent sequence (full name)  string       35    uvm_test_top.env_h.agnth.seqr_h.seq
+  sequencer                    string       31    uvm_test_top.env_h.agnth.seqr_h    
+-------------------------------------------------------------------------------------
+
+I am in ref model
+I am here in check data
+UVM_INFO @ 30000: reporter [MISCMP] Miscompare for data_rcvd.data_out: lhs = 'h0 : rhs = 'h1
+UVM_INFO @ 30000: reporter [MISCMP] 1 Miscompare(s) for object data_rcvd@787 vs. data_rcvd@770
+I am in run_phase
+UVM_INFO ../agent/monitor.sv(37) @ 50000: uvm_test_top.env_h.agnth.mon_h [monitor] Printing from monitor
+------------------------------------
+Name        Type         Size  Value
+------------------------------------
+data_rcvd   transaction  -     @783 
+  rst       integral     1     'd0  
+  load      integral     1     1    
+  mode      integral     1     'h0  
+  data_in   integral     4     'd0  
+  data_out  integral     4     'd0  
+------------------------------------
+UVM_INFO ../agent/driver.sv(36) @ 50000: uvm_test_top.env_h.agnth.drv_h [driver] Printing from driver -------------------------------------------------------------------------------------
+Name                           Type         Size  Value                              
+-------------------------------------------------------------------------------------
+req                            transaction  -     @791                               
+  rst                          integral     1     'd0                                
+  load                         integral     1     'd0                                
+  mode                         integral     1     'h0                                
+  data_in                      integral     4     'd0                                
+  data_out                     integral     4     'd0                                
+  begin_time                   time         64    30000                              
+  depth                        int          32    'd2                                
+  parent sequence (name)       string       3     seq                                
+  parent sequence (full name)  string       35    uvm_test_top.env_h.agnth.seqr_h.seq
+  sequencer                    string       31    uvm_test_top.env_h.agnth.seqr_h    
+-------------------------------------------------------------------------------------
+
+I am in ref model
+I am here in check data
+UVM_INFO ../tb/scoreboard.sv(58) @ 50000: uvm_test_top.env_h.sb [uvm_test_top.env_h.sb] Successfully compared
+I am in run_phase
+UVM_INFO ../agent/monitor.sv(37) @ 70000: uvm_test_top.env_h.agnth.mon_h [monitor] Printing from monitor
+------------------------------------
+Name        Type         Size  Value
+------------------------------------
+data_rcvd   transaction  -     @795 
+  rst       integral     1     'd0  
+  load      integral     1     'd0  
+  mode      integral     1     'h0  
+  data_in   integral     4     'd0  
+  data_out  integral     4     'd0  
+------------------------------------
+UVM_INFO ../agent/driver.sv(36) @ 70000: uvm_test_top.env_h.agnth.drv_h [driver] Printing from driver -------------------------------------------------------------------------------------
+Name                           Type         Size  Value                              
+-------------------------------------------------------------------------------------
+req                            transaction  -     @803                               
+  rst                          integral     1     'd0                                
+  load                         integral     1     'd0                                
+  mode                         integral     1     'h1                                
+  data_in                      integral     4     'd0                                
+  data_out                     integral     4     'd0                                
+  begin_time                   time         64    50000                              
+  depth                        int          32    'd2                                
+  parent sequence (name)       string       3     seq                                
+  parent sequence (full name)  string       35    uvm_test_top.env_h.agnth.seqr_h.seq
+  sequencer                    string       31    uvm_test_top.env_h.agnth.seqr_h    
+-------------------------------------------------------------------------------------
+
+I am in ref model
+I am here in check data
+UVM_INFO @ 70000: reporter [MISCMP] Miscompare for data_rcvd.data_out: lhs = 'h0 : rhs = 'h9
+UVM_INFO @ 70000: reporter [MISCMP] 1 Miscompare(s) for object data_rcvd@811 vs. data_rcvd@795
+I am in run_phase
+UVM_INFO ../agent/monitor.sv(37) @ 90000: uvm_test_top.env_h.agnth.mon_h [monitor] Printing from monitor
+------------------------------------
+Name        Type         Size  Value
+------------------------------------
+data_rcvd   transaction  -     @807 
+  rst       integral     1     'd0  
+  load      integral     1     'd0  
+  mode      integral     1     'h1  
+  data_in   integral     4     'd0  
+  data_out  integral     4     9    
+------------------------------------
+UVM_INFO ../agent/driver.sv(36) @ 90000: uvm_test_top.env_h.agnth.drv_h [driver] Printing from driver -------------------------------------------------------------------------------------
+Name                           Type         Size  Value                              
+-------------------------------------------------------------------------------------
+req                            transaction  -     @815                               
+  rst                          integral     1     'd0                                
+  load                         integral     1     'd0                                
+  mode                         integral     1     'h0                                
+  data_in                      integral     4     'd0                                
+  data_out                     integral     4     'd0                                
+  begin_time                   time         64    70000                              
+  depth                        int          32    'd2                                
+  parent sequence (name)       string       3     seq                                
+  parent sequence (full name)  string       35    uvm_test_top.env_h.agnth.seqr_h.seq
+  sequencer                    string       31    uvm_test_top.env_h.agnth.seqr_h    
+-------------------------------------------------------------------------------------
+
+I am in ref model
+I am here in check data
+UVM_INFO @ 90000: reporter [MISCMP] Miscompare for data_rcvd.data_out: lhs = 'h9 : rhs = 'h0
+UVM_INFO @ 90000: reporter [MISCMP] 1 Miscompare(s) for object data_rcvd@823 vs. data_rcvd@807
+I am in run_phase
+UVM_INFO ../agent/monitor.sv(37) @ 110000: uvm_test_top.env_h.agnth.mon_h [monitor] Printing from monitor
+------------------------------------
+Name        Type         Size  Value
+------------------------------------
+data_rcvd   transaction  -     @819 
+  rst       integral     1     'd0  
+  load      integral     1     'd0  
+  mode      integral     1     'h0  
+  data_in   integral     4     'd0  
+  data_out  integral     4     'd0  
+------------------------------------
+UVM_INFO ../agent/driver.sv(36) @ 110000: uvm_test_top.env_h.agnth.drv_h [driver] Printing from driver -------------------------------------------------------------------------------------
+Name                           Type         Size  Value                              
+-------------------------------------------------------------------------------------
+req                            transaction  -     @827                               
+  rst                          integral     1     'd0                                
+  load                         integral     1     'd0                                
+  mode                         integral     1     'h0                                
+  data_in                      integral     4     'd0                                
+  data_out                     integral     4     'd0                                
+  begin_time                   time         64    90000                              
+  depth                        int          32    'd2                                
+  parent sequence (name)       string       3     seq                                
+  parent sequence (full name)  string       35    uvm_test_top.env_h.agnth.seqr_h.seq
+  sequencer                    string       31    uvm_test_top.env_h.agnth.seqr_h    
+-------------------------------------------------------------------------------------
+
+I am in ref model
+I am here in check data
+UVM_INFO @ 110000: reporter [MISCMP] Miscompare for data_rcvd.data_out: lhs = 'h0 : rhs = 'h9
+UVM_INFO @ 110000: reporter [MISCMP] 1 Miscompare(s) for object data_rcvd@835 vs. data_rcvd@819
+I am in run_phase
+UVM_INFO ../agent/monitor.sv(37) @ 130000: uvm_test_top.env_h.agnth.mon_h [monitor] Printing from monitor
+------------------------------------
+Name        Type         Size  Value
+------------------------------------
+data_rcvd   transaction  -     @831 
+  rst       integral     1     'd0  
+  load      integral     1     'd0  
+  mode      integral     1     'h0  
+  data_in   integral     4     'd0  
+  data_out  integral     4     9    
+------------------------------------
+UVM_INFO ../agent/driver.sv(36) @ 130000: uvm_test_top.env_h.agnth.drv_h [driver] Printing from driver -------------------------------------------------------------------------------------
+Name                           Type         Size  Value                              
+-------------------------------------------------------------------------------------
+req                            transaction  -     @839                               
+  rst                          integral     1     'd0                                
+  load                         integral     1     'd0                                
+  mode                         integral     1     'h0                                
+  data_in                      integral     4     'd0                                
+  data_out                     integral     4     'd0                                
+  begin_time                   time         64    110000                             
+  depth                        int          32    'd2                                
+  parent sequence (name)       string       3     seq                                
+  parent sequence (full name)  string       35    uvm_test_top.env_h.agnth.seqr_h.seq
+  sequencer                    string       31    uvm_test_top.env_h.agnth.seqr_h    
+-------------------------------------------------------------------------------------
+
+I am in ref model
+I am here in check data
+UVM_INFO @ 130000: reporter [MISCMP] Miscompare for data_rcvd.data_out: lhs = 'h9 : rhs = 'h8
+UVM_INFO @ 130000: reporter [MISCMP] 1 Miscompare(s) for object data_rcvd@847 vs. data_rcvd@831
+I am in run_phase
+UVM_INFO ../agent/monitor.sv(37) @ 150000: uvm_test_top.env_h.agnth.mon_h [monitor] Printing from monitor
+------------------------------------
+Name        Type         Size  Value
+------------------------------------
+data_rcvd   transaction  -     @843 
+  rst       integral     1     'd0  
+  load      integral     1     'd0  
+  mode      integral     1     'h0  
+  data_in   integral     4     'd0  
+  data_out  integral     4     8    
+------------------------------------
+UVM_INFO ../agent/driver.sv(36) @ 150000: uvm_test_top.env_h.agnth.drv_h [driver] Printing from driver -------------------------------------------------------------------------------------
+Name                           Type         Size  Value                              
+-------------------------------------------------------------------------------------
+req                            transaction  -     @851                               
+  rst                          integral     1     'd0                                
+  load                         integral     1     'd0                                
+  mode                         integral     1     'h0                                
+  data_in                      integral     4     'd0                                
+  data_out                     integral     4     'd0                                
+  begin_time                   time         64    130000                             
+  depth                        int          32    'd2                                
+  parent sequence (name)       string       3     seq                                
+  parent sequence (full name)  string       35    uvm_test_top.env_h.agnth.seqr_h.seq
+  sequencer                    string       31    uvm_test_top.env_h.agnth.seqr_h    
+-------------------------------------------------------------------------------------
+
+I am in ref model
+I am here in check data
+UVM_INFO @ 150000: reporter [MISCMP] Miscompare for data_rcvd.data_out: lhs = 'h8 : rhs = 'h7
+UVM_INFO @ 150000: reporter [MISCMP] 1 Miscompare(s) for object data_rcvd@859 vs. data_rcvd@843
+I am in run_phase
+UVM_INFO ../agent/monitor.sv(37) @ 170000: uvm_test_top.env_h.agnth.mon_h [monitor] Printing from monitor
+------------------------------------
+Name        Type         Size  Value
+------------------------------------
+data_rcvd   transaction  -     @855 
+  rst       integral     1     'd0  
+  load      integral     1     'd0  
+  mode      integral     1     'h0  
+  data_in   integral     4     'd0  
+  data_out  integral     4     'd7  
+------------------------------------
+UVM_INFO ../agent/driver.sv(36) @ 170000: uvm_test_top.env_h.agnth.drv_h [driver] Printing from driver -------------------------------------------------------------------------------------
+Name                           Type         Size  Value                              
+-------------------------------------------------------------------------------------
+req                            transaction  -     @863                               
+  rst                          integral     1     'd0                                
+  load                         integral     1     'd0                                
+  mode                         integral     1     'h1                                
+  data_in                      integral     4     'd0                                
+  data_out                     integral     4     'd0                                
+  begin_time                   time         64    150000                             
+  depth                        int          32    'd2                                
+  parent sequence (name)       string       3     seq                                
+  parent sequence (full name)  string       35    uvm_test_top.env_h.agnth.seqr_h.seq
+  sequencer                    string       31    uvm_test_top.env_h.agnth.seqr_h    
+-------------------------------------------------------------------------------------
+
+I am in ref model
+I am here in check data
+UVM_INFO @ 170000: reporter [MISCMP] Miscompare for data_rcvd.data_out: lhs = 'h7 : rhs = 'h6
+UVM_INFO @ 170000: reporter [MISCMP] 1 Miscompare(s) for object data_rcvd@871 vs. data_rcvd@855
+I am in run_phase
+UVM_INFO ../agent/monitor.sv(37) @ 190000: uvm_test_top.env_h.agnth.mon_h [monitor] Printing from monitor
+------------------------------------
+Name        Type         Size  Value
+------------------------------------
+data_rcvd   transaction  -     @867 
+  rst       integral     1     'd0  
+  load      integral     1     'd0  
+  mode      integral     1     'h1  
+  data_in   integral     4     'd0  
+  data_out  integral     4     'd6  
+------------------------------------
+UVM_INFO ../agent/driver.sv(36) @ 190000: uvm_test_top.env_h.agnth.drv_h [driver] Printing from driver -------------------------------------------------------------------------------------
+Name                           Type         Size  Value                              
+-------------------------------------------------------------------------------------
+req                            transaction  -     @875                               
+  rst                          integral     1     'd0                                
+  load                         integral     1     'd0                                
+  mode                         integral     1     'h1                                
+  data_in                      integral     4     'd0                                
+  data_out                     integral     4     'd0                                
+  begin_time                   time         64    170000                             
+  depth                        int          32    'd2                                
+  parent sequence (name)       string       3     seq                                
+  parent sequence (full name)  string       35    uvm_test_top.env_h.agnth.seqr_h.seq
+  sequencer                    string       31    uvm_test_top.env_h.agnth.seqr_h    
+-------------------------------------------------------------------------------------
+
+I am in ref model
+I am here in check data
+UVM_INFO @ 190000: reporter [MISCMP] Miscompare for data_rcvd.data_out: lhs = 'h6 : rhs = 'h7
+UVM_INFO @ 190000: reporter [MISCMP] 1 Miscompare(s) for object data_rcvd@883 vs. data_rcvd@867
+I am in run_phase
+UVM_INFO /home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_objection.svh(1274) @ 190000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   43
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[MISCMP]    18
+[RNTST]     1
+[TEST_DONE]     1
+[UVMTOP]     1
+[driver]    10
+[monitor]    10
+[scoreboard]     1
+[uvm_test_top.env_h.sb]     1
+$finish called from file "/home/cad/eda/SYNOPSYS/VCS/vcs/T-2022.06-SP1/etc/uvm/base/uvm_root.svh", line 437.
+$finish at simulation time               190000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 190000 ps
+CPU Time:      0.410 seconds;       Data structure size:   0.6Mb
+Thu Aug 22 14:43:57 2024
